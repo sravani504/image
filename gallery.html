@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale.0">
+<title>
+    image gallery
+</title>
+<link rel="stylesheet" href="css8.css">
+</head>
+<body>
+    <div class="full-img" id="fullimgbox">
+        <img src="1.jpeg"  id="fullimg">
+        <span onclick="closefullimg()">x</span>
+    </div>
+<div class="img-gallery">
+    <img src="1.jpeg"  onclick="openfullimg(this.src)">
+    <img src="8.jpeg" onclick="openfullimg(this.src)">
+    <img src="4.jpeg" onclick="openfullimg(this.src)">
+    <img src="5.jpeg" onclick="openfullimg(this.src)">
+    <img src="7.jpeg" onclick="openfullimg(this.src)">
+    <img src="11.jpeg"onclick="openfullimg(this.src)" >
+    <img src="9.jpeg" onclick="openfullimg(this.src)" >
+    <img src="10.jpeg" onclick="openfullimg(this.src)">
+    <img src="2.jpeg"onclick="openfullimg(this.src)">
+
+</div>
+<script>
+    var fullimgbox=document.getElementById("fullimgbox");
+    var fullimg=document.getElementById("fullimg");
+     
+     function openfullimg(pic){
+        fullimgbox.style.display="flex";
+        fullimg.src=pic;
+     }
+     function closefullimg(){
+        fullimgbox.style.display="none";
+
+     }
+</script>
+</body>
+</html>
+
